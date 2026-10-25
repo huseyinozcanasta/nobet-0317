@@ -1,4 +1,24 @@
-# NÖBET 03:17 v3.0 — Sözlü Komisyonu
+# NÖBET 03:17 v3.1 — Tıklanabilir Özgün FBT Soru/Cevapları
+
+**[▶ Oyunu aç](https://huseyinozcanasta.github.io/nobet-0317/)** · **[FBT kaynak eşleme standardı](docs/FBT_BAGLANTI_STANDARDI.md)** · **[Önceki kaynak haritası](docs/FBT_KAYNAK_HARITASI.md)**
+
+## v3.1 yeniliği
+
+Her klinik karar geri bildiriminin altında **tıklanabilir FBT #... soru/sayfa kısayolları** yer alır. Dokunulduğunda açılan modal, **özgün birleşik FBT sorusunu**, notta varsa **özgün cevabı**, bundan **ayrıca** güncel öğretici açıklamayı gösterir. Uygun yerde kılavuz bağlantısı ve eski tedavi notları için güncellik uyarısı bulunur.
+
+- **13 hasta dosyasının tamamı** FBT ile eşlendi; toplam **25 farklı doğrulanmış FBT soru kartı**, vakalar arasında **28 soru ilişkisi** vardır.
+- **38 klinik kararın her birinde** FBT kısayolları kullanılabilir; vaka sonu özetinde de tekrar açılabilir.
+- Cevabı yazılmamış özgün sorular (FBT **#10**, **#12**) açıkça “özgün notta cevap yok” olarak etiketlenir. Öğretici açıklama asla kaynak yanıtı gibi sunulmaz.
+- Genel septik şok ve epidural hematom gibi birebir FBT sorusu olmayan dosyalar **“İLGİLİ KONU”** uyarısıyla en yakın doğrulanmış FBT başlığına bağlanır.
+- Kaynaklar menüsünden bütün 13 vakanın FBT soru-cevap bağlantılarının bulunduğu **FBT Kütüphanesi** açılır.
+- Önce sözlü açıklama prensibi bozulmaz: karar sırasında FBT cevabı gizlidir, geri bildirim sonrasında açılır.
+- Gelecek vakalarda bu kuralı zorunlu tutan [kaynak eşleme standardı](docs/FBT_BAGLANTI_STANDARDI.md) ve **otomatik GitHub Actions doğrulaması** eklenmiştir (`node scripts/check-fbt-links.cjs`).
+
+**Test:** 25 kaynak kartı, 13 hasta / 38 karar, modal, özelleştirilmiş uyarılar, mobil tarayıcı boyutu, yerel kayıt koruma ve sözlü akış otomatik Chrome testinden geçti. Gerçek Android cihazında manuel son kullanım testi henüz yapılmadı.
+
+---
+
+## v3.0 ve önceki sürümler
 
 **[▶ Oyunu aç](https://huseyinozcanasta.github.io/nobet-0317/)** · **[FBT kaynak haritası](docs/FBT_KAYNAK_HARITASI.md)**
 
