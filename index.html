@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#070d16">
-<title>NÖBET 03:17 v2.0 • Klinik Karar Simülasyonu</title>
+<title>NÖBET 03:17 v3.0 • Klinik Karar Simülasyonu</title>
 <style>
 :root{--bg:#070d16;--panel:#101c2b;--panel2:#142539;--line:#283b4e;--txt:#e8f3fb;--sub:#9bb1c3;--teal:#5af1ca;--red:#ff617d;--amber:#ffc773;--blue:#7fb3ff;--radius:20px;--max:1220px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 76% -14%,#173647 0%,transparent 47%),radial-gradient(ellipse at -5% 70%,#101c39 0%,transparent 40%),var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;min-height:100vh}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.075;background-image:linear-gradient(#6db8cc 1px,transparent 1px),linear-gradient(90deg,#6db8cc 1px,transparent 1px);background-size:38px 38px;mask-image:linear-gradient(to bottom,black,transparent 85%)}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}a{color:#80ddff}button:disabled{cursor:not-allowed;opacity:.48}.hide{display:none!important}.wrap{max-width:var(--max);padding:22px 25px 80px;margin:auto;position:relative}.top{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;padding:7px 0 30px}.logo{font-size:14px;font-weight:850;letter-spacing:.22em}.logo b{color:var(--teal)}.meta{font-size:12px;color:var(--sub);display:flex;gap:15px;align-items:center;flex-wrap:wrap}.live-dot{display:inline-block;width:7px;height:7px;background:var(--teal);border-radius:100%;box-shadow:0 0 14px var(--teal);margin-right:7px;animation:pulse 1.7s infinite}@keyframes pulse{50%{opacity:.3}}.chip{border:1px solid var(--line);border-radius:100px;padding:7px 12px;font-size:11px;letter-spacing:.06em;color:var(--sub)}.eyebrow{color:var(--teal);letter-spacing:.21em;font-size:11px;font-weight:750;text-transform:uppercase}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;min-height:610px}.hero h1{font-weight:850;letter-spacing:-.065em;font-size:clamp(74px,10vw,154px);line-height:.83;margin:22px 0 33px}.hero h1 i{font-style:normal;color:var(--teal)}.hero .lead{font-size:clamp(19px,2.2vw,26px);line-height:1.35;color:#c5d9e7;max-width:550px;font-weight:400}.hero .lead strong{color:white}.intro-copy{font-size:14px;line-height:1.7;color:var(--sub);max-width:560px;margin:17px 0 30px}.actions{display:flex;flex-wrap:wrap;gap:10px}.primary{background:var(--teal);color:#062824;border:0;padding:15px 22px;border-radius:10px;font-weight:820;letter-spacing:.03em;box-shadow:0 0 32px #39ecb722}.primary:hover{filter:brightness(1.09);transform:translateY(-1px)}.secondary{background:#162639;color:var(--txt);border:1px solid #36516a;padding:14px 18px;border-radius:10px;font-weight:630}.secondary:hover{background:#1b3448}.glass{border:1px solid var(--line);background:linear-gradient(145deg,#152839bf,#091420e8);border-radius:var(--radius);box-shadow:0 25px 80px #0008;position:relative;overflow:hidden}.glass:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(110deg,transparent 34%,#b8fff306 51%,transparent 66%)}.intro-monitor{padding:17px}.monitor-head{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:11px;color:var(--sub);padding:5px 4px 16px}.monitor-signal{background:#081824;border:1px solid #223f4c;border-radius:13px;overflow:hidden;height:240px;position:relative}.monitor-signal canvas{display:block;width:100%;height:100%}.monitor-overlay{position:absolute;top:17px;left:19px;display:flex;flex-direction:column;gap:12px}.monitor-overlay span{font-size:9px;color:#8eb6ab;letter-spacing:.12em}.monitor-overlay strong{font-size:40px;font-weight:600;color:var(--teal);line-height:1;font-variant-numeric:tabular-nums}.monitor-pulse{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:10px}.small-metric{padding:11px;border:1px solid #20384b;border-radius:11px;background:#0a1926}.small-metric span{display:block;color:var(--sub);font-size:10px;letter-spacing:.06em}.small-metric strong{display:block;margin-top:5px;font-size:18px}.warning-amber{color:var(--amber)!important}.warning-red{color:var(--red)!important}.stat-line{display:flex;align-items:center;gap:13px;font-size:12px;color:var(--sub);margin-top:28px}.stat-line span{color:var(--txt);font-weight:700}.divider-dot{width:3px;height:3px;border-radius:50%;background:#7593a6}.section-header{display:flex;gap:15px;align-items:flex-end;justify-content:space-between;margin:4px 0 23px;flex-wrap:wrap}.section-header h2{font-size:clamp(30px,4vw,52px);letter-spacing:-.045em;margin:9px 0 0}.desc{color:var(--sub);font-size:14px;line-height:1.65}.case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.case-card{width:100%;text-align:left;position:relative;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#15283a,#0c1724);color:var(--txt);min-height:205px;padding:23px;overflow:hidden;transition:transform .2s,border .2s}.case-card:hover:not(:disabled){transform:translateY(-3px);border-color:#64a1ac}.case-card:before{content:"";position:absolute;left:0;top:24px;bottom:24px;width:3px;background:var(--accent,var(--teal));box-shadow:0 0 20px var(--accent,var(--teal))}.card-row{display:flex;justify-content:space-between;align-items:center;gap:10px}.case-label{font-size:10px;letter-spacing:.16em;color:var(--sub)}.case-number{font-size:34px;letter-spacing:-.05em;font-weight:800;color:#426177}.case-card h3{font-size:24px;letter-spacing:-.03em;margin:25px 0 6px}.case-card p{color:var(--sub);font-size:13px;line-height:1.55;margin:0}.case-footer{font-size:11px;margin-top:17px;color:var(--accent,var(--teal));letter-spacing:.08em;font-weight:700}.case-card:disabled{opacity:.65}.case-card.done .case-footer{color:var(--teal)}.progress-top{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center}.progress-bar{height:5px;background:#173046;overflow:hidden;border-radius:20px;margin:10px 0 25px}.progress-fill{height:100%;background:linear-gradient(90deg,#328f9e,var(--teal));width:0;transition:width .35s}.play-layout{display:grid;grid-template-columns:1.12fr .88fr;gap:16px;align-items:start}.play-main,.play-side{background:linear-gradient(155deg,#132638ee,#0c1928f5);border:1px solid var(--line);border-radius:17px;overflow:hidden}.play-main{padding:27px}.play-side{padding:19px}.patient-header{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.priority{border:1px solid #b9625c;color:#ff9c94;font-size:10px;letter-spacing:.1em;padding:7px 10px;border-radius:40px;font-weight:750}.patient-name{font-size:30px;line-height:1.12;margin:14px 0 8px;letter-spacing:-.035em}.patient-info{color:var(--sub);font-size:12px}.clinical-note{margin-top:23px;background:#0a1928;border:1px solid #213a4e;border-left:2px solid var(--blue);border-radius:10px;padding:19px;line-height:1.8;color:#c5d9e5;font-size:14px}.clinical-note strong{color:white}.q-head{display:flex;justify-content:space-between;align-items:center;margin:26px 0 10px;color:var(--teal);font-weight:700;font-size:11px;letter-spacing:.15em}.question{font-size:clamp(22px,2.7vw,30px);font-weight:760;line-height:1.32;letter-spacing:-.025em;margin:0 0 19px}.choices{display:grid;gap:10px}.choice{display:flex;align-items:center;gap:15px;text-align:left;width:100%;padding:15px 16px;background:#14293b;color:var(--txt);border:1px solid #2e4960;border-radius:12px;line-height:1.45;font-size:14px;min-height:64px;transition:background .15s,border-color .15s}.choice:hover:not(:disabled){background:#213a4d;border-color:#578097}.choice .letter{font-size:12px;border:1px solid #466075;width:27px;height:27px;border-radius:7px;display:grid;place-items:center;flex:none;color:var(--sub);font-weight:750}.choice.correct{border-color:#48d5ae;background:#103f3d}.choice.wrong{border-color:#fd6a80;background:#492531}.feedback{margin-top:17px;border-radius:12px;padding:17px 18px;border:1px solid #37645a;background:#102c2e}.feedback.wrong{border-color:#7a3c4b;background:#341e2c}.feedback-title{font-size:14px;font-weight:800;margin:0 0 8px}.feedback p{color:#c9d9e1;font-size:13px;line-height:1.65;margin:0 0 12px}.feedback .primary{padding:11px 16px}.telemetry{border:1px solid #213f50;background:#081621;border-radius:12px;padding:15px;margin-top:12px}.vital-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.vital{background:#0d2130;border:1px solid #1b3346;padding:12px;border-radius:9px}.vital label{display:block;color:#809cad;font-size:10px;letter-spacing:.08em}.vital .value{font-weight:800;font-size:23px;line-height:1.5;font-variant-numeric:tabular-nums}.vital .unit{font-size:10px;font-weight:450;color:var(--sub)}.labs{border-top:1px solid #254052;margin-top:17px;padding-top:12px}.labrow{display:flex;justify-content:space-between;padding:10px 2px;border-bottom:1px solid #173244;font-size:12px;gap:12px}.labrow span{color:#9bb6c7}.labrow strong{text-align:right;font-variant-numeric:tabular-nums}.doctor-note{margin-top:16px;border:1px dashed #426079;border-radius:10px;padding:13px;color:#b0c6d3;font-size:12px;line-height:1.7}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0 0}.smallbtn{border-radius:9px;border:1px solid #345369;color:#c2d9e5;background:#102a3d;padding:9px 12px;font-size:12px}.smallbtn:hover{background:#1c3b51}.bottom{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-top:33px;padding-top:22px;border-top:1px solid #1f3548;font-size:11px;color:var(--sub);line-height:1.6}.bottom a{font-size:11px}.report-shell{max-width:870px;margin:0 auto}.report-hero{padding:28px 0 14px}.report-hero h2{font-size:clamp(38px,6vw,70px);letter-spacing:-.06em;margin:12px 0 9px;line-height:1}.score-panel{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:20px 0}.scorebox{background:#102637;border:1px solid #315365;padding:18px;border-radius:12px}.scorebox .big{font-size:38px;font-weight:840;letter-spacing:-.055em}.scorebox .label{color:#94b6c6;font-size:11px;margin-top:5px}.result-detail{margin:13px 0;padding:20px;border:1px solid var(--line);border-radius:13px;background:#0e2030}.result-detail h3{margin:0 0 10px}.result-detail p{font-size:13px;line-height:1.65;color:#bed1dc}.missed{padding:14px 0;border-bottom:1px solid #2a4655;font-size:13px;line-height:1.7}.missed strong{color:#eaf9ff}.unlock{background:linear-gradient(115deg,#20354d,#251b40);border:1px solid #7761a1;border-radius:14px;padding:22px;margin:18px 0}.unlock strong{color:#d7adff}.sources{display:grid;gap:7px;margin:15px 0}.sources a{font-size:12px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,30px);background:#174d49;color:#f5fffb;padding:11px 20px;border-radius:10px;border:1px solid var(--teal);box-shadow:0 9px 35px #0009;z-index:20;opacity:0;pointer-events:none;transition:.25s;white-space:nowrap;max-width:93vw;overflow:hidden;text-overflow:ellipsis;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden-secret{font-size:10px;color:#618295;letter-spacing:.16em;padding:10px 0}.back{background:transparent;color:#95bdc9;border:0;padding:6px 0;font-size:12px}.back:hover{color:white}.intro-remark{font-size:11px;color:#7598a9;margin-top:15px}.badge-score{border:1px solid #325866;padding:9px 11px;border-radius:8px;color:#a9cdda;font-size:12px}.simple-header{margin-bottom:30px}.tutorial-panel{padding:17px 19px;border:1px solid #294656;background:#0e2130;border-radius:12px;font-size:12px;color:#a9c4d3;line-height:1.7;margin-top:21px}.report-actions{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 25px}.info-tag{font-weight:760;color:#8ec9f4;font-size:10px;letter-spacing:.12em}.fade-in{animation:up .45s both}@keyframes up{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
@@ -58,7 +58,7 @@ function setStatus(){const core=DATA.filter(c=>c.id!=='neuro'&&session.done.has(
 function btn(t,fn,cl='secondary'){return `<button class="${cl}" onclick="${fn}">${t}</button>`}
 function home(){cancelAnimationFrame(raf);session.caseId=null;setStatus();app.innerHTML=`<section class="hero fade-in"><div><div class="eyebrow">ACİL SERVİS / İNTERAKTİF EĞİTİM</div><h1>NÖBET<br><i>03:17</i></h1><div class="lead">Kapıda on iki hasta ve kilitli bir konsültasyon var. <strong>Ezber değil, karar vermen gerekiyor.</strong></div><div class="intro-copy">Klasik dört nöbet ve sekiz yeni uzman dosyası: öglisemik DKA, kolanjit, TTP, ANCA vasküliti, adrenal kriz, spontan bakteriyel peritonit, nötropenik sepsis ve tiroid fırtınası. İlk dört dosya gizli konsültasyonu açar.</div><div class="actions">${btn('NÖBETİ DEVRAL →','showCases()','primary')}${btn('Klinik kaynakları gör','showSources()')}</div><div class="stat-line"><span>12 AÇIK VAKA</span><div class="divider-dot"></div><span>36 KLİNİK KARAR</span><div class="divider-dot"></div><span>2 KARARLIK GİZLİ DOSYA</span></div><div class="intro-remark">Süre sınırı yok • İnternetsiz çalışır • Sonuçlar bu cihazda saklanır</div></div><div class="glass intro-monitor"><div class="monitor-head"><span><span class="live-dot"></span>PATIENT MONITOR / BAY 01</span><span>ECG II • TEMSİLİ EĞİTİM GÖRSELİ</span></div><div class="monitor-signal"><canvas id="homeECG"></canvas><div class="monitor-overlay"><span>HEART RATE / BPM</span><strong>43</strong></div></div><div class="monitor-pulse"><div class="small-metric"><span>BP mmHg</span><strong>94/56</strong></div><div class="small-metric"><span>SpO₂</span><strong>96%</strong></div><div class="small-metric"><span>K⁺ mmol/L</span><strong class="warning-red">7,1</strong></div></div></div></section>`;drawECG('homeECG',true)}
 function showSources(){cancelAnimationFrame(raf);app.innerHTML=`<section class="fade-in report-shell"><button class="back" onclick="home()">← ANA EKRAN</button><div class="report-hero"><div class="eyebrow">DAYANAKLAR / 2026</div><h2>Gerçek klinik kaynaklar.</h2><p class="desc">Eğitim soruları yüksek riskli karar noktalarına odaklanır. Hasta senaryoları kurgusaldır; kaynakların kendisi değildir.</p></div><div class="result-detail"><h3>Klinik kaynaklar</h3><p class="desc">Yeni vaka seti, FBT özgün notunun doğrulanabilen konu başlıklarına ve yayımlanmış klinik kılavuzlara dayanır. Google Drive’daki “Dahiliye_Birlesik_Sayfa_001-109.docx” birleşik aktarımına erişildi; yeni vakaların bağlı olduğu ilgili soru numaraları ve başlıkları belge içinde karşılaştırıldı. Senaryolar birebir kopya değil, özgün klinik uygulama sorularıdır.</p><div class="sources">${SOURCES.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">↗ ${esc(t)}</a>`).join('')}</div></div><div class="result-detail"><h3>FBT soru izi</h3><p>Yeni dosyalarda FBT #10, #22, #32, #99, #164, #204–207, #353–354 ve #436 dahil ilgili başlıklar ve kaynak sayfaları gösterilir. Referans: 109 sayfalık “Dahiliye Sözlü Notu FBT (düzenlenmiş)” ile “SON NÖBET” 442 kayıtlı müfredat envanteri. Yeni senaryolar, orijinal soruların yeniden yazılmış klinik uygulamalarıdır.</p></div><div class="result-detail"><h3>Güvenlik sınırı</h3><p>Bu ürün tıp öğrencisi için öğrenme ve düşünme egzersizidir. Eylemler bir hekimin emirleri değil, eğitim seçenekleridir. İlaç dozları, gerçek zamanlı karar desteği veya canlı hasta takibi sunmaz. Özel klinik protokoller ve kıdemli ekip değerlendirmesi esastır.</p></div>${btn('VAKALARA GEÇ','showCases()','primary')}</section>`}
-function showCases(){cancelAnimationFrame(raf);session.caseId=null;setStatus();let coreDone=DATA.slice(0,4).every(c=>session.done.has(c.id));if(coreDone)session.neuroUnlocked=true;persist();let advanced=DATA.slice(5);app.innerHTML=`<section class="fade-in"><div class="section-header"><div><div class="eyebrow">TRİYAJ TERMİNALİ / 03:17 • v2.0</div><h2>Hangi dosyayı açıyorsun?</h2><p class="desc">Dört klasik vaka ve sekiz yeni, ayırıcı tanıya dayalı zor vaka. Vakalarda üç karar; gizli konsültasyonda iki karar bulunur.</p></div><span class="badge-score">TAMAMLANAN ${DATA.filter(c=>c.id!=='neuro'&&session.done.has(c.id)).length} / 12</span></div><div class="section-header" style="margin-top:22px"><div><div class="eyebrow">I. ACİL SERVİS • TEMEL</div><h3>İlk nöbet</h3></div><span class="chip">4 VAKA</span></div><div class="case-grid">${DATA.slice(0,4).map(card).join('')}</div><div class="section-header" style="margin-top:34px"><div><div class="eyebrow">II. İLERİ KLİNİK KARAR • FBT KAYNAKLI</div><h3>Uzman dosyaları</h3><p class="desc">Her dosyada laboratuvar tuzağı, ayırıcı tanı ve güvenli öncelik sıralaması var. Sorular FBT başlıklarından türetilmiştir; özgün sınav sorularının birebir kopyası değildir.</p></div><span class="chip">8 ZOR VAKA</span></div><div class="case-grid">${advanced.map(card).join('')}</div><div class="unlock"><div class="eyebrow">${coreDone?'HAT AKTİF':'ŞİFRELİ HAT / KİLİTLİ'}</div><h3 style="margin:9px 0 8px">${coreDone?'📟 Nöroşirürjiden acil çağrı var.':'📟 Telefon henüz çalmadı.'}</h3><p class="desc">${coreDone?'İlk dört vakayı tamamladın. Nöroşirürji konsültasyonu açıldı.':'İlk dört temel hastayı tamamladığında gizli nöroşirürji dosyası açılır; ileri düzey vakalar bağımsız oynanabilir.'}</p>${coreDone?btn('GİZLİ KONSÜLTASYONU AÇ →',"startCase('neuro')",'primary'):''}</div>${session.done.size?`<div class="actions">${btn('GÜNCEL NÖBET RAPORU','report()')}${btn('YENİ NÖBET / SIFIRLA','reset()')}</div>`:''}<div class="tutorial-panel"><strong>PUANLAMA</strong> Her soruda dört seçenek vardır. Tam doğru 2, kısmen doğru 1, yanlış 0 puan. İpucu kullanırsan üst sınır 1 olur. Yanıt sonrası gerekçe ve kılavuz bağlantısı açılır; Hata Atlası tekrarlanacak konuları toplar.</div></section>`} 
+function showCases(){cancelAnimationFrame(raf);session.caseId=null;setStatus();let coreDone=DATA.slice(0,4).every(c=>session.done.has(c.id));if(coreDone)session.neuroUnlocked=true;persist();let advanced=DATA.slice(5);app.innerHTML=`<section class="fade-in"><div class="section-header"><div><div class="eyebrow">TRİYAJ TERMİNALİ / 03:17 • v3.0</div><h2>Hangi dosyayı açıyorsun?</h2><p class="desc">Dört klasik vaka ve sekiz yeni, ayırıcı tanıya dayalı zor vaka. Vakalarda üç karar; gizli konsültasyonda iki karar bulunur.</p></div><span class="badge-score">TAMAMLANAN ${DATA.filter(c=>c.id!=='neuro'&&session.done.has(c.id)).length} / 12</span></div><div class="section-header" style="margin-top:22px"><div><div class="eyebrow">I. ACİL SERVİS • TEMEL</div><h3>İlk nöbet</h3></div><span class="chip">4 VAKA</span></div><div class="case-grid">${DATA.slice(0,4).map(card).join('')}</div><div class="section-header" style="margin-top:34px"><div><div class="eyebrow">II. İLERİ KLİNİK KARAR • FBT KAYNAKLI</div><h3>Uzman dosyaları</h3><p class="desc">Her dosyada laboratuvar tuzağı, ayırıcı tanı ve güvenli öncelik sıralaması var. Sorular FBT başlıklarından türetilmiştir; özgün sınav sorularının birebir kopyası değildir.</p></div><span class="chip">8 ZOR VAKA</span></div><div class="case-grid">${advanced.map(card).join('')}</div><div class="unlock"><div class="eyebrow">${coreDone?'HAT AKTİF':'ŞİFRELİ HAT / KİLİTLİ'}</div><h3 style="margin:9px 0 8px">${coreDone?'📟 Nöroşirürjiden acil çağrı var.':'📟 Telefon henüz çalmadı.'}</h3><p class="desc">${coreDone?'İlk dört vakayı tamamladın. Nöroşirürji konsültasyonu açıldı.':'İlk dört temel hastayı tamamladığında gizli nöroşirürji dosyası açılır; ileri düzey vakalar bağımsız oynanabilir.'}</p>${coreDone?btn('GİZLİ KONSÜLTASYONU AÇ →',"startCase('neuro')",'primary'):''}</div>${session.done.size?`<div class="actions">${btn('GÜNCEL NÖBET RAPORU','report()')}${btn('YENİ NÖBET / SIFIRLA','reset()')}</div>`:''}<div class="tutorial-panel"><strong>PUANLAMA</strong> Her soruda dört seçenek vardır. Tam doğru 2, kısmen doğru 1, yanlış 0 puan. İpucu kullanırsan üst sınır 1 olur. Yanıt sonrası gerekçe ve kılavuz bağlantısı açılır; Hata Atlası tekrarlanacak konuları toplar.</div></section>`} 
 function card(c){const done=session.done.has(c.id);return `<button class="case-card ${done?'done':''}" style="--accent:${c.accent}" onclick="startCase('${c.id}')"><div class="card-row"><span class="case-label">${c.tag}</span><span class="case-number">${c.n}</span></div><h3>${esc(c.title)}</h3><p>${esc(c.subtitle)}</p>${c.fbt?`<p class="fbt-label">KAYNAK İZİ • ${esc(c.fbt)}</p>`:''}<div class="case-footer">${done?'✓ TEKRAR OYNA':'DOSYAYI AÇ →'}</div></button>`}
 function startCase(id){if(id==='neuro'&&!session.neuroUnlocked){toast('Önce dört ana vakayı tamamla.');return}const c=DATA.find(x=>x.id===id);if(!c)return;session.caseId=id;session.step=0;session.answer=null;session.help=false;session.results[id]=[];session.hintUsed[id]=[];session.played.add(id);showStep()}
 function showStep(){cancelAnimationFrame(raf);const c=DATA.find(x=>x.id===session.caseId),step=c.steps[session.step];session.answer=null;session.help=false;session.choiceOrder=[0,1,2,3];let seed=(c.n.charCodeAt(1)*31+(session.step+1)*97);for(let j=3;j>0;j--){seed=(seed*1664525+1013904223)>>>0;let k=seed%(j+1);[session.choiceOrder[j],session.choiceOrder[k]]=[session.choiceOrder[k],session.choiceOrder[j]]}setStatus();app.innerHTML=`<section class="fade-in"><div class="progress-top"><button class="back" onclick="showCases()">← TRİYAJ EKRANINA DÖN</button><span class="badge-score">VAKA ${c.n} • KARAR ${session.step+1}/${c.steps.length}</span></div><div class="progress-bar"><div class="progress-fill" style="width:${session.step/c.steps.length*100}%"></div></div><div class="play-layout"><section class="play-main"><div class="patient-header"><span class="eyebrow">${esc(c.tag)}</span><span class="priority">● ${esc(c.priority)}</span></div><h2 class="patient-name">${esc(c.patient)}</h2><div class="patient-info">${esc(c.subtitle)}</div>${c.fbt?`<div class="fbt-banner">FBT BAĞLANTISI: ${esc(c.fbt)} • Kurgusal yeni hasta</div>`:""}<div class="clinical-note"><strong>KLİNİK NOT / 03:${String(17+session.step*7).padStart(2,'0')}</strong><br>${esc(c.intro)}</div><div class="q-head"><span>ŞİMDİ KARAR VER</span><span>+2 PUAN</span></div><h3 class="question">${esc(step.q)}</h3><div class="choices" id="choices">${session.choiceOrder.map((orig,i)=>{const opt=step.options[orig];return `<button class="choice" onclick="choose(${i})"><span class="letter">${'ABCD'[i]}</span><span>${esc(opt[0])}</span></button>`}).join('')}</div><div id="feedback"></div><div class="toolbar"><button class="smallbtn" id="hintBtn" onclick="hint()">◌ İPUCU AL (−1 PUAN)</button><button class="smallbtn" onclick="speakCase()">◖ VAKAYI SESLİ OKU</button></div></section><aside class="play-side"><div class="monitor-head"><span><span class="live-dot"></span>MONİTÖR / BAY ${c.n}</span><span>TEMSİLİ SİNYAL</span></div><div class="monitor-signal" style="height:152px"><canvas id="caseECG"></canvas></div><div class="telemetry"><div class="vital-grid">${Object.entries(c.vitals).map(([k,v])=>`<div class="vital"><label>${k}</label><div class="value ${k==='HR'&&Number(v)<60?'warning-amber':''}">${esc(v)}</div></div>`).join('')}</div><div class="labs">${c.labs.map(([a,b])=>`<div class="labrow"><span>${esc(a)}</span><strong>${esc(b)}</strong></div>`).join('')}</div></div><div class="doctor-note">⚕ Bu eğitim simülasyonunda müdahaleler kıdemli hekim gözetiminde ve kurum protokollerine göre düşünülür.</div></aside></div></section>`;drawECG('caseECG',c.id==='hyperk');window.scrollTo({top:0,behavior:'smooth'})}
@@ -84,5 +84,328 @@ function signal(u){let cyc=(u%1+1)%1;function gauss(center,sd,amp){return amp*Ma
 function frame(){if(!canvas.isConnected)return;ctx.clearRect(0,0,width,height);ctx.strokeStyle='#143743';ctx.lineWidth=.6;for(let x=0;x<width;x+=22){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,height);ctx.stroke()}for(let y=0;y<height;y+=22){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(width,y);ctx.stroke()}ctx.strokeStyle='#52ebc0';ctx.lineWidth=2;ctx.shadowBlur=12;ctx.shadowColor='#3ff3b2';ctx.beginPath();for(let x=0;x<=width;x+=2){let u=x/(hyper?118:105)-phase;let y=height*.69-signal(u)*(height*.40);if(x===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)}ctx.stroke();ctx.shadowBlur=0;phase+=.004;raf=requestAnimationFrame(frame)}
 const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduce){frame();cancelAnimationFrame(raf)}else frame();}
 document.getElementById('soundBtn').onclick=function(){session.sound=!session.sound;this.textContent=session.sound?'♫ SES AÇIK':'♪ SES KAPALI';this.setAttribute('aria-pressed',String(session.sound));if(session.sound)sfx('good')};window.addEventListener('beforeunload',()=>{if('speechSynthesis'in window)window.speechSynthesis.cancel()});setStatus();home();
+
+/* NÖBET 03:17 v3 sözlü eğitimi ve önyargıdan arındırılmış kısa şıklar */
+const SHORT_LABELS={"hyperk":[["IV kalsiyumla kardiyak membranı hızla stabilize et","EKG izlemi sırasında ikinci potasyum sonucunu beklemek","İnsülin-glukozla potasyumu kaydırıp EKG'yi izlemek","Oral potasyum desteğini verip EKG'yi tekrar etmek"],["K⁺ kaydırma, uzaklaştırma ve glukozu seri izleme","IV kalsiyum sonrası yalnız ritim monitorizasyonu","Nebül salbutamol ile tek ajanlı düşürme yaklaşımı","EKG düzeldikten sonra kısa gözlemle taburculuk"],["Dirençli hiperkalemide nefrolojiyle acil diyaliz değerlendirmesi","EKG sakinleştiği için monitörizasyonu sonlandırmak","K⁺ ölçümünü sabah vizitine bırakıp izlemek","Oral diyet eğitimiyle müdahalesiz izlem seçmek"]],"dka":[["Önce potasyum replasmanı; düşük K⁺'da insülini geçici olarak ertele","Dehidratasyonla birlikte insülin bolusu başlamak","Sıvı ve bikarbonatla asidozu hızla düzeltmek","Oral hidrasyonu izleyerek insülini bekletmek"],["Sıvı-insülinle seri elektrolit/K⁺ izlemi","Glukoz düzelmesini bekleyip ketonları izlemek","İnsülin başlayınca potasyum kontrollerini kesmek","Rutin bikarbonat infüzyonunu tedaviye eklemek"],["Dekstroz ekleyerek insülin ve ketonemi izlemi","Şeker normale yaklaştığı için insülini kesmek","Glukoz 200 altını tam iyileşme ölçütü saymak","Elektrolitler ilk ölçümde normalse takibi kesmek"]],"aki":[["Retansiyon için mesane taraması ve uygun drenaj","Önce diüretik yanıtı görüp görüntülemeye geçmek","Kreatinini haftalık kontrole alıp evde izlemek","İdrar azalmasına karşı koşulsuz yüksek sıvı vermek"],["Diürez, sıvı kaybı ve elektrolitleri yakın izle","Drenaj sonrası takip sonlandırıp sondaya odaklanmak","İdrarın her litresine iki litre sıvı replase etmek","Kreatinin normale dönene dek idrarı ölçmemek"],["Kreatinin üç kat ve ≥12 saat anüri: KDIGO evre 3","Evre 1: mutlak kreatinin artışı tek ölçüt sayılır","Evre 2: iki katı aşmak üst evreyi dışlar","Akut hasar yok: bulgular tümüyle BPH'ye bağlı"]],"sepsis":[["Şok için ABC, antibiyotik ve erken perfüzyon desteği","Görüntüleme ve tüm kültürleri bekleyip başlamak","Önce ateşi düşürüp basıncın düzelmesini izlemek","Oral antibiyotik verip kısa poliklinik kontrolü"],["Sıvı yanıtını izleyerek vazopresör ihtiyacını yeniden değerlendirme","MAP yükselene dek aralıksız sıvı bolusu vermek","CRP değişimine göre hipotansiyonu izlemek","Diüretikle sıvıyı uzaklaştırıp basıncı izlemek"],["MAP, idrar, bilinç ve laktat eğilimini birlikte izle","Ateş normalse sepsis kontrol altında varsaymak","Normal SpO₂'yi tek başına iyileşme saymak","İlk antibiyotikten sonra yeni değerlendirme yapmamak"]],"neuro":[["Travmada epidural hematom: ABC ve acil nöroşirürji konsültasyonu","Basit konküzyon, gözlem sonrası ev kontrolü","Travmatik migren, analjezi ve semptom kontrolü","Baş ağrısı geçene kadar yatak istirahati"],["GKS ve anizokori varlığında erken cerrahi görüşü","Genç yaşta intrakraniyal kanamayı izlemle geçirmek","Bikonveks BT görünümünde rutin kontrol planlamak","Yalnız ağrı şiddetiyle cerrahi endikasyon belirlemek"]],"edk":[["SGLT2 ile öglisemik DKA: ketonemi ve asidoz birlikte","Açlık ketozu: keton artsa da ciddi asidoz beklemek","HHS: hafif glukoz artışını tanı için yeterli saymak","Klasik DKA kriteri için glukozun yükselmesini beklemek"],["SGLT2'yi kes; insülin-dekstroz ve K⁺ izlemi","Düşük glukozda insülini ertelerken yalnız sıvı vermek","K⁺ ölçümü yerine bikarbonatla asidoz kontrolü","Oral sıvı ve kısa aralıklı evde glukoz izlemi"],["Ketoz sürüyorsa insülin ve dekstrozla izlem","Glukoz 145 olduğu için IV insülini sonlandırmak","İdrar ketonu azalınca tedaviyi tamamlamak","Sodyum normalse ketoasidozun düzeldiğini varsaymak"]],"cholang":[["Dilatasyon ve organ disfonksiyonuyla ağır akut kolanjit/sepsis","Asemptomatik safra kesesi taşına bağlı sarılık","Konfüzyonu primer demans ilerlemesiyle açıklamak","Hemolitik sarılık ve safra kanalını tesadüfi saymak"],["Antibiyotik, sıvı ve acil biliyer ekip çağrısı","Bilirubin eğilimi çıkana kadar destek tedavisi","ERCP tamamlanınca ilk antibiyotiğe başlamak","Elektif kolesistektomi için taburculuk planlamak"],["Obstrüksiyonda ERCP ile erken biliyer drenajı sağla","Antibiyotiğe tam yanıtı bekleyip drenajı ertelemek","Analjeziyi artırıp obstrüksiyonun açılmasını izlemek","Açık cerrahiyi rutin ilk kaynak kontrolü saymak"]],"ttp":[["Şistositli hemoliz ve trombositopeni: TTP olasılığı","Normal koagülasyon testlerine rağmen DIC kesin tanısı","Mikrositer demir eksikliğiyle şistositleri açıklamak","Tek başına İTP ile hemolitik anemiyi açıklamak"],["ADAMTS13 örneği ardından acil plazma değişim planı","ADAMTS13 laboratuvar sonucunu bekleyerek izlem","Trombosit sayısını öncelikle transfüzyonla düzeltmek","Oral demir başlanıp ayaktan kontrol verilmesi"],["TTP'de koagülasyon çoğu kez normal; DIC'de bozulma beklenebilir","Normal PT ve aPTT varlığıyla TTP'yi dışlamak","Şistosit olmayacağını kabul edip TTP'den uzaklaşmak","Ateş bulunmadığından TTP'yi olasılık dışı saymak"]],"pulmrenal":[["Alveoler hemoraji ve hızlı GN: pulmoner-renal","Üriner taş ve viral enfeksiyonun eşzamanlı seyri","Bronşit-dehidratasyon ikilisinin tek başına açıklaması","Alt ÜSE ile akciğer infiltrasyonunu ayrı izlemek"],["ANCA/anti-GBM, idrar mikroskopisi ve acil nefroloji/yoğun bakım","Yalnız tekrar idrar testi için iki hafta sonra çağırmak","PR3-ANCA negatifliğinde tüm vaskülitleri dışlamak","Hemoptiziyi öksürük tedavisiyle semptomatik izlemek"],["Organ tehdidinde erken immünsüpresyon ve destek","Antibiyotik verip ayaktan kontrol programı kurmak","Biyopsi sonuçlanana dek kritik bakımı ertelemek","Proteinüri azalana kadar girişimsiz izlem yapmak"]],"adrenal":[["Steroid kesilmesinde adrenal kriz/şok ihtimali","Eşlik eden hipotansiyonu panik atağa bağlamak","Taşikardiye bakıp primer hipertansif krizi düşünmek","Kusmayı basit hiperventilasyon sonucu saymak"],["IV stres doz hidrokortizon ve acil şok desteği","ACTH uyarı testini bekleyip tedaviyi sonra vermek","Semptomları antihistaminikle kontrol etmeyi denemek","Oral destekle elektif poliklinik kontrolü planlamak"],["Sekonder yetmezlikte aldosteron korunabilir; hiperkalemi şart değildir","Sekonder yetmezlikte ağır hiperkalemiyi şart saymak","Sekonder durumda mineralokortikoid kaybını daha ağır saymak","ACTH ile primer-sekonder ayrımı yapılamadığını savunmak"]],"sbp":[["Asit PMN ≥250 ile kültürsüz SBP tanısını düşün","Ateş yokluğuyla spontan bakteriyel peritoniti dışlamak","Kültür pozitifliği görülmeden tedaviye başlamamak","Serum albümini tek başına SBP tanı kriteri saymak"],["IV antibiyotik, kültür ve renal/albümin izlemi","Oral laksatif verip klinik kötüleşmeyi gözlemek","Sirozlu her hastaya rutin antifungal tedavi başlamak","Asit kültürü sonuçlanıncaya dek antibiyotiği ertelemek"],["Sekonder peritonit ya da direnç araştırması","PMN düşmese de düzelme varsayıp tedaviyi bitirmek","Yalnız SAAG'ı tekrar hesaplayıp izlem sürdürmek","Kültür negatifse önceki SBP tanısını dışlamak"]],"neutro":[["Derin nötropeni ve şok: afebril sepsis olasılığı","Eşik ateş yok diye sistemik enfeksiyonun dışlanması","ANC değerini normal nötrofil sayısı kabul etmek","Klinik izlem ve kan kültürlerini gereksiz saymak"],["Yatış ve IV antipsödomonal ampirik antibiyotik","Kültür almadan oral ateş düşürücüyle ev kontrolü","Düşük risk protokolü uygulayarak hastayı taburcu etmek","Kültür üremesine dek IV antibiyotiği ertelemek"],["Vankomisin: rutin değil, seçilmiş endikasyonlar","Bütün nötropenik hastalara rutin vankomisin eklemek","Antibiyotikte klinik odağı önemsiz kabul etmek","Direnç ve MRSA öyküsünü seçimden bağımsız saymak"]],"thyroid":[["Tiroid fırtınası: ateş, AF ve organ tehdidi","Komplike olmayan hipertirodide poliklinik izlem yapmak","Ateşli enfeksiyonun hormonlardan tamamen bağımsızlığı","Yalnız atriyal fibrilasyona bağlayıp fırtınayı dışlamak"],["Yoğun bakımda çoklu tedavi ve tetikleyicinin kontrolü","Sadece oral beta bloker verip taburcu etmeyi planlamak","Önce sadece ateşin düşmesini bekleyip gözlemek","Serbest T4 düşmeden hiçbir destek tedavisi vermemek"],["Beta bloker seçiminde kardiyak rezervi sorgula","Kalp yetmezliği olsa da yüksek doz beta blokeri vermek","Ritmi tek hedef sayıp tirotoksikozu tedavisiz bırakmak","Hormon düzeyinden tanı koyup dolaşımı değerlendirmemek"]]};
+const CASE_TEACH={"hyperk":{"mechanism":"Hiperkalemide membran potansiyeli değişir; PR uzaması, QRS genişlemesi ve ritim bozukluğu riski ortaya çıkabilir. IV kalsiyum, miyokard membranını stabilize eder; serum potasyumunu düşürmez. İnsülin-glukoz hücre içine geçici kaydırma yapar; potasyumun bedenden uzaklaştırılması ayrıca planlanır.","pitfall":"Normalleşen EKG, potasyumun normale geldiğini tek başına kanıtlamaz. Rebound, hipoglisemi ve dirençli hiperkalemi riski devam eder.","follow":"Hocan: EKG düzelmiş ama potasyum 6,8 ise taburcu eder misin? Neden?","answer":"Hayır. Ritmin düzelmesi hiperkaleminin çözüldüğünü kanıtlamaz; yakın K⁺/glukoz/ritim izlemi, uzaklaştırma ve dirençli tabloda acil nefroloji-diyaliz değerlendirmesi gerekir.","rubrics":[["EKG değişikliği ile zaman kritik ağır hiperkalemi riskini adlandırdım.","IV kalsiyumun potasyumu düşürmeden kalbi koruduğunu açıkladım."],["Potasyumun hücre içine kaydırılmasını ve vücuttan uzaklaştırılmasını ayırdım.","İnsülin sonrası glukoz/K⁺ izlemini ve rebound riskini belirttim."],["Dirençli K⁺ yüksekliğini tedavi başarısızlığı kabul ettim.","Diyaliz gereksinimi ve yeniden EKG/K⁺ izlemini söyledim."]]},"dka":{"mechanism":"İnsülin eksikliği ketogenez ve anyon açıklı metabolik asidoz yapar. İnsülin verildiğinde potasyum hücre içine kayar; başlangıç potasyumu düşük olan hastada ağır hipokalemi ve aritmi gelişebilir. Glukoz düşmesi ketozun bittiği anlamına gelmez.","pitfall":"Tek bir glukoz değeri değil, ketonemi, asit-baz dengesi ve elektrolitler beraber izlenir. Düşük potasyum insülin zamanlamasını değiştirir.","follow":"Glukoz 190 ama pH hâlâ 7,20: insülini kesmek hangi komplikasyona yol açabilir?","answer":"Ketogenez ve asidoz devam edebilir. Protokole uygun dekstrozla insülini sürdürmek ve K⁺/keton/pH izlemini sürdürmek gerekir.","rubrics":[["DKA'yı keton ve asidozla tanımladım.","K⁺ 3,1 mmol/L iken insülinin ertelenme gerekçesini açıkladım."],["Sıvı, insülin, potasyum ve tetikleyici nedeni birlikte ele aldım.","Seri ölçümlerle tedavi yanıtını izlemenin gerekçesini belirttim."],["Glukoz normalleşmesi ile DKA çözülmesini ayırdım.","Dekstrozla insülinin sürdürülmesini açıkladım."]]},"aki":{"mechanism":"Anüriye glob vezikale eşlik etmesi postrenal obstrüksiyon olasılığını artırır. Drenaj sonrası postobstrüktif diürez gelişebilir; sodyum, potasyum, sıvı dengesi ve böbrek işlevi izlenmelidir.","pitfall":"Obstrüksiyon çözülmesi AKI'yi anında iyileştirmez. KDIGO evrelemesinde karşılanan en ağır kreatinin veya idrar çıkışı kriteri esas alınır.","follow":"Hasta sondadan sonra saatlerce çok idrar yapıyorsa neden güvenle eve gönderemezsin?","answer":"Postobstrüktif diürez ve elektrolit/sıvı kaybı gelişebilir; idrar çıkışı, elektrolitler, hemodinami ve kreatinin yakın izlenmelidir.","rubrics":[["Anürinin postrenal nedenini glob vezikale ile ilişkilendirdim.","Mesane değerlendirmesi ve uygun drenaj planını belirttim."],["Postobstrüktif diürezi öngördüm.","Sıvı-elektrolit/kreatinin izlemini belirttim."],["Bazal kreatinine göre ≥3 kat artışı hesapladım.","≥12 saat anüri ile evre 3 kriterini eşledim."]]},"sepsis":{"mechanism":"Sepsiste disregüle konak yanıtı organ disfonksiyonu; septik şokta ciddi dolaşım/metabolik bozukluk yaratır. Kaynak kontrolü, uygun antibiyotik, perfüzyon desteği ve sık yeniden değerlendirme eşzamanlı ilerler.","pitfall":"Tek başına ateş, SpO₂ ya da CRP şok çözülmesini göstermeye yetmez. Sıvı yüklemek kadar, sıvı yanıtını sorgulamak da önemlidir.","follow":"Laktat yüksekliği tek başına her zaman daha fazla sıvı vermen gerektiğini kanıtlar mı?","answer":"Hayır. Klinik perfüzyon, sıvı yanıtı, kalp/akciğer bulguları ve diğer laktat nedenleri birlikte değerlendirilmelidir.","rubrics":[["Şok bulgularını (hipotansiyon, hipoperfüzyon, laktat) tanıdım.","Erken antibiyotik, uygun sıvı ve kültür/kaynak kontrolünü sıraladım."],["MAP düşükken vazopresör gereksinimini söyledim.","Tekrarlayan kör sıvı bolusunun sakıncasını açıkladım."],["En az üç perfüzyon göstergesi saydım.","Eşzamanlı enfeksiyon odağı kontrolünü hatırlattım."]]},"neuro":{"mechanism":"Epidural hematom dural arter kanamasıyla ilişkilidir; bikonveks görünüm karakteristiktir. Bilinçte hızla bozulma ve anizokori artan kitle etkisi/herniasyon tehlikesini düşündürür.","pitfall":"Genç yaş ya da kısa süre konuşabilmiş olması güven vermez; hava yolu ve hızlı nöroşirürji kararının önemini azaltmaz.","follow":"Hangi iki klinik bulgu BT'deki epidural hematomu daha acil hâle getiriyor?","answer":"Düşük GKS (özellikle koma) ve anizokori; klinik kötüleşme ile birlikte hızla cerrahi değerlendirme gerekir.","rubrics":[["Bikonveks BT ve travmayı epidural hematomla eşledim.","ABC/airway ve acil nöroşirürji önceliğini söyledim."],["GKS düşüklüğünü ve anizokoriyi belirttim.","Herniasyon ve acil boşaltım gereğini açıkladım."]]},"edk":{"mechanism":"SGLT2 inhibitörleri glukozüri yaparak glukoz yüksekliğini maskeleyebilir; ketonemi ve anyon açıklı asidoz belirgin olabilir. DKA tanısında keton ve asit-baz değerlendirmesi, yalnız glukoz düzeyinden daha belirleyicidir.","pitfall":"Glukozun 168 veya 145 olması ketozun çözüldüğünü göstermez. Keton temizlenene kadar izlemde insülin ve uygun dekstroz birlikte gerekebilir.","follow":"Glukoz düşük-normal ama pH ve keton anormal ise insülinin neden dekstrozla sürdürülmesi gerekir?","answer":"Hedef ketogenez ve asidozu sonlandırmaktır; dekstroz hipoglisemiyi önleyerek insülini uygun şekilde sürdürmeyi sağlar.","rubrics":[["SGLT2 maruziyeti, asidoz ve ketonemiyi birlikte yorumladım.","Açlık ketozu/HHS ile ayırıcı tanıyı söyledim."],["SGLT2 kesilmesi, sıvı ve insülin-dekstroz yaklaşımını sıraladım.","Elektrolit ve seri keton/pH izlemini söyledim."],["Glukozun normal olmasının iyileşme demek olmadığını açıkladım.","Ketoz ve asidoz çözülme ölçütünü belirttim."]]},"cholang":{"mechanism":"Enfekte ve tıkalı safra yollarında bilirubin/kolestaz bulguları sepsisle birleşebilir. Yaşlı ve kritik hastalarda klasik sağ üst kadran ağrısı belirgin olmayabilir; görüntüleme ve organ disfonksiyonu önemlidir.","pitfall":"Ağrı yokluğu kolanjiti dışlamaz; antibiyotik tek başına tıkalı-enfekte biliyer sistemi yeterince kontrol etmeyebilir.","follow":"Ateş, sarılık ve hipotansiyon varken sağ üst kadran ağrısı yoksa kolanjit düşünmeyi neden sürdürürsün?","answer":"Ağrı özellikle yaşlı/kritik hastada atipik olabilir. Kolestaz, dilate koledok ve dolaşım/bilinç bozukluğu ağır kolanjit lehinedir.","rubrics":[["Kolestaz + obstrüksiyon + organ disfonksiyonunu ilişkilendirdim.","Yaşlı hastada ağrısız ağır kolanjit olasılığını anlattım."],["Kültür ve acil antibiyotik/perfüzyon desteğini sıraladım.","ERCP/kaynak kontrolü için erken ekip iletişimini belirttim."],["Obstrüksiyon çözülmezse antibiyotikle yetinilemeyeceğini söyledim.","ERCP ile erken drenajı ve eşzamanlı stabilizasyonu açıkladım."]]},"ttp":{"mechanism":"TTP'de ciddi ADAMTS13 eksikliği ultrabüyük vWF multimerleri üzerinden mikrotrombüs ve mikroanjiyopatik hemolize neden olur. Şistosit, LDH artışı, trombositopeni ve değişken nörolojik/böbrek bulguları destekler.","pitfall":"Klasik beşli tüm hastalarda bulunmaz. Normal PT/aPTT TTP'yi dışlamaz; ağır şüphede ADAMTS13 test sonucu beklenerek acil tedavi geciktirilmez.","follow":"DIC ile TTP'yi yatak başında nasıl ayırmaya başlarsın; hangi bulgu kesin tek başına tanı koydurmaz?","answer":"PT/aPTT, fibrinojen, D-dimer ve organ bulgularını birlikte ele alırım. Normal koagülasyon TTP lehine olabilir ama tek başına kesin tanı değildir.","rubrics":[["MAHA, şistosit ve trombositopeni kombinasyonunu kurdum.","TTP ile DIC/İTP ayrımını söyleyebildim."],["ADAMTS13 örneğini tedaviden önce almanın gerekçesini söyledim.","Plazma değişiminin geciktirilmemesini belirttim."],["Koagülasyon testleri ile TTP/DIC karşılaştırması yaptım.","Tek ölçüm yerine bütüncül ayırıcı tanıyı savundum."]]},"pulmrenal":{"mechanism":"Eritrosit silendirleri glomerüler kaynaklı kanamayı düşündürür; hemoptizi ve bilateral opasitelerle birlikteliği diffüz alveoler hemoraji ve hızla ilerleyen GN açısından alarmdır. ANCA vasküliti ve anti-GBM hastalığı farklı ama zaman kritik ayırıcı tanılardır.","pitfall":"Serolojinin negatifliği tek başına bütün vaskülitleri dışlamaz; enfeksiyon taklidi ve biyopsi kararı uzman gözetimiyle değerlendirilmelidir.","follow":"Eritrosit silendiri ile dipstick hematüri arasında neden tanısal ağırlık farkı vardır?","answer":"Silendir renal tübüllerde şekillendiği için glomerüler/renal parankimal kanamayı daha güçlü düşündürür; dipstick pozitifliği tek başına kanamanın yerini göstermez.","rubrics":[["Hemoptizi + böbrek yetmezliği + silendiri aynı sendromda topladım.","Alveoler hemoraji ve hızlı GN aciliyetini belirttim."],["ANCA ve anti-GBM dahil hedef testleri sıraladım.","Yoğun bakım/nefroloji konsültasyonunu geciktirmemeyi söyledim."],["Organ tehdidinde hızlı tedavi kararını vurguladım.","Enfeksiyon ve olası biyopsinin eşzamanlı değerlendirilmesini belirttim."]]},"adrenal":{"mechanism":"Uzun süreli glukokortikoid tedavisi hipotalamus-hipofiz-adrenal aksı baskılayabilir. Ani kesilme ve interkurrent hastalıkta kortizol gereksinimi karşılanamaz; hipotansiyon, hiponatremi ve hipoglisemi olabilir.","pitfall":"Sekonder/tersiyer yetmezlikte renin-anjiyotensin-aldosteron aksı görece korunabildiği için hiperkalemi bulunmaması adrenal krizi dışlamaz.","follow":"Potasyum normal olsa bile neden steroid kesilmesine bağlı adrenal krizden şüphelenirsin?","answer":"Eksojen steroid hipofiz-ACTH eksenini baskılar; aldosteron genellikle korunduğu için ağır hiperkalemi zorunlu değildir.","rubrics":[["Steroid kesilmesini olası HPA aks baskılanmasıyla eşledim.","Sepsisin eş zamanlı olabileceğini söyledim."],["Stres dozu steroid ve sıvı/glukoz desteğini belirttim.","Laboratuvar nedeniyle tedaviyi geciktirmemeyi söyledim."],["Aldosteronun primer-sekonder farkını açıkladım.","Normal K⁺'nın adrenal krizi dışlamadığını belirttim."]]},"sbp":{"mechanism":"Asit sıvısında PMN ≥250/mm³, kültür negatif olsa da spontan bakteriyel peritonit için tanısal eşiği karşılayabilir. Ateş veya karın ağrısı bulunmayabilir; ensefalopati ve böbrek bozulması başvuru nedeni olabilir.","pitfall":"Kültür sonucunu beklemek antibiyotiği geciktirmemeli; kötüleşmede dirençli organizma veya sekonder peritonit araştırılmalıdır.","follow":"Asit PMN 360, kültür negatif geldi. Tanını geri çeker misin?","answer":"Hayır. Kültür negatif nötrositik asit SBP ile uyumlu olabilir; klinik ve PMN sonucuna göre tedavi değerlendirilir.","rubrics":[["PMN eşiğini doğru yorumladım.","Ateş ve karın ağrısının yokluğunda da SBP düşündüm."],["Ampirik antibiyotik ve kültürü anlattım.","Renal risk ve albümin endikasyonunu değerlendirdim."],["Yanıtsızlıkta sekonder peritonit/direnci düşündüm.","Tekrar parasentez ve uygun tetkik planını açıkladım."]]},"neutro":{"mechanism":"Kemoterapi sonrası derin nötropeni enfeksiyon bulgularını silikleştirebilir. Hemodinamik bozukluk, yeni infiltrasyon ve ANC 80/µL ağır enfeksiyon şüphesini destekler; ateş eşiğinin karşılanmaması aciliyeti azaltmaz.","pitfall":"Febril nötropenide her hastaya rutin vankomisin başlanmaz; klinik odak, MRSA riski, hemodinamik durum ve yerel direnç belirleyicidir.","follow":"Afebril ama hipotansif nötropenik hastayı neden düşük riskli ayaktan yönetemezsin?","answer":"Derin nötropeniyle birlikte şok ve infiltrasyon organ tehdidi gösterir; yatış, hızla IV ampirik tedavi ve destek gerektirir.","rubrics":[["ANC 80 ve şokun ateşten daha kritik olduğunu vurguladım.","Afebril sepsisi ciddi olasılık saydım."],["Yatış ve IV antipsödomonal yaklaşımı söyledim.","Kültürün antibiyotiği geciktirmemesi gerektiğini açıkladım."],["Rutin vankomisinin neden yanlış olduğunu anlattım.","Kateter/pnömoni/instabilite ve MRSA risklerini örnekledim."]]},"thyroid":{"mechanism":"Tiroid fırtınası yalnız hormon düzeyinin yüksekliği değil, ateş, merkezi sinir sistemi bozukluğu, ağır taşikardi/AF ve multiorgan dekompansasyonun klinik tanısıdır. Tetikleyici enfeksiyon da eşzamanlı tedavi edilmelidir.","pitfall":"Şiddetli taşikardiyi baskılarken kalp yetmezliği ve hemodinamik durum hesaba katılmalı; körlemesine yüksek doz beta bloker dolaşımı bozabilir.","follow":"Aynı fT4 yüksekliğine sahip iki hastadan biri neden fırtına olabilir, diğeri olmayabilir?","answer":"Fırtına organ disfonksiyonu ve sistemik dekompansasyonla tanımlanan klinik tablodur; hormon düzeyi tek başına şiddeti belirlemez.","rubrics":[["Organ disfonksiyonunu hormon yüksekliğinden ayırdım.","Ateş, bilinç ve AF bulgularını entegre ettim."],["Yoğun bakım ve tetikleyici enfeksiyonun önemini söyledim.","Hormon üretim/etkiyi sınırlayan çoklu tedavi ilkelerini tanımladım."],["Beta bloker kararında hemodinamik/kalp yetmezliği riskini söyledim.","Dolaşımı izleme ve uzman gözetimini vurguladım."]]}};
+/* NÖBET 03:17 v3.0 — Sözlü sınav eğitimi, cevap önyargısı denetimi.
+   Orijinal v2 vaka ve puan motorunu koruyarak eğitim katmanı ekler. */
+(function(){
+'use strict';
+if(typeof DATA==='undefined'||typeof showStep!=='function'||typeof CASE_TEACH==='undefined'){throw Error('v3 engine missing');}
+const former=JSON.parse(localStorage.getItem(SAVEKEY)||'{}');
+session.oralMode=typeof former.oralMode==='boolean'?former.oralMode:true;
+session.oralRecords=former.oralRecords&&typeof former.oralRecords==='object'?former.oralRecords:{};
+const _persist=persist;
+persist=function(){
+  _persist();
+  try{
+    const state=JSON.parse(localStorage.getItem(SAVEKEY)||'{}');
+    state.oralMode=session.oralMode;
+    state.oralRecords=session.oralRecords;
+    localStorage.setItem(SAVEKEY,JSON.stringify(state));
+  }catch(e){}
+};
+const _home=home;
+home=function(){
+  _home();
+  const lead=document.querySelector('.hero .lead');
+  if(lead)lead.innerHTML='Sözlüde cevap seçenekleri yok. <strong>Önce sen açıklayacaksın; sonra klinik kararı seçeceksin.</strong>';
+  const intro=document.querySelector('.hero .intro-copy');
+  if(intro)intro.textContent='13 dosyada 38 karar. Yeni Sözlü Komisyonu modunda kendi cevabını kilitle, benzer şıkları ayırt et, her kararın mekanizmasını ve karşıt seçenekleri çöz. Puanlar sözlü yeterliliğin değil, çalışma geri bildirimin.';
+};
+const _card=card;
+card=function(c){
+  let html=_card(c);
+  const safe=esc('KÖR TRİYAJ • '+c.n);
+  html=html.replace('<span class="case-label">'+c.tag+'</span>','<span class="case-label">'+safe+'</span>');
+  html=html.replace(/<p class="fbt-label">[\s\S]*?<\/p>/,'');
+  return html;
+};
+const _showCases=showCases;
+showCases=function(){
+  _showCases();
+  const el=document.querySelector('.tutorial-panel');
+  if(el){
+    const panel=document.createElement('div');
+    panel.className='oral-toggle';
+    panel.innerHTML='<strong>🎙️ SÖZLÜ KOMİSYONU</strong><p>Önce serbest klinik cevabını yaz; şıklar ancak kilitledikten sonra açılır. Cevapları otomatik notlandırmıyoruz: gerekçeli kontrol listesinden kendin denetlersin. Dört seçenekli testin puanı bundan ayrıdır.</p><button class="smallbtn" onclick="toggleOralMode()" id="modeBtn">'+(session.oralMode?'SÖZLÜ MOD AÇIK ✓ — HIZLI MODA GEÇ':'HIZLI MOD AÇIK — SÖZLÜ MODA GEÇ')+'</button>';
+    el.prepend(panel);
+  }
+};
+window.toggleOralMode=function(){
+  session.oralMode=!session.oralMode;
+  persist();
+  showCases();
+};
+const _startCase=startCase;
+startCase=function(id){
+  if(id==='neuro'&&!session.neuroUnlocked)return _startCase(id);
+  session.oralRecords[id]=[];
+  _startCase(id);
+  persist();
+};
+const _showStep=showStep;
+showStep=function(){
+  _showStep();
+  const c=DATA.find(x=>x.id===session.caseId),st=c.steps[session.step];
+  if(!c||!st)return;
+  const t=document.querySelector('.patient-header .eyebrow');
+  if(t)t.textContent='KÖR VAKA • TANIYI SEN KOY';
+  const source=document.querySelector('.fbt-banner');
+  if(source)source.remove();
+  const choices=document.getElementById('choices');
+  const options=SHORT_LABELS[c.id][session.step];
+  const nodes=[...choices.querySelectorAll('.choice')];
+  const oldOrder=session.choiceOrder.slice();
+  const entries=oldOrder.map((idx,k)=>({idx,node:nodes[k]}));
+  for(let k=entries.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));const temp=entries[k];entries[k]=entries[j];entries[j]=temp;}
+  session.choiceOrder=entries.map(x=>x.idx);
+  entries.forEach((it,k)=>{
+    const node=it.node;
+    node.querySelector('.letter').textContent='ABCD'[k];
+    const spans=node.querySelectorAll('span');
+    spans[spans.length-1].textContent=options[it.idx];
+    node.setAttribute('onclick','choose('+k+')');
+    choices.appendChild(node);
+  });
+  const head=document.querySelector('.q-head');
+  if(head)head.innerHTML='<span>KLİNİK KARAR • SÖZLÜ ÖN TEST</span><span>TEST +2 • SÖZLÜ AYRI</span>';
+  const toolbar=document.querySelector('.toolbar');
+  const hintButton=document.getElementById('hintBtn');
+  if(!session.oralMode)return;
+  choices.style.display='none';
+  if(hintButton)hintButton.disabled=true;
+  const panel=document.createElement('section');
+  panel.id='oralStage';
+  panel.className='oral-stage';
+  panel.innerHTML='<div class="eyebrow">1 / 3 • ÖNCE SÖZLÜ</div>'+
+    '<h3>Hocanın karşısındasın. Cevabını açıklamadan önce kendi klinik akıl yürütmeni yaz.</h3>'+
+    '<p class="oral-muted">Olası sendromu, kritik ayırıcı tanıyı, ilk önceliği ve gerekçeni birkaç cümleyle açıkla. Sonra yanıtın kilitlenecek ve seçenekler açılacak. Sadece doğru şıkkı işaretlemek sözlü başarısı sayılmaz.</p>'+
+    '<label for="oralAnswer">Sözlü cevabın (en az 25 karakter)</label>'+
+    '<textarea id="oralAnswer" aria-label="Sözlü cevabım" rows="5" placeholder="Bu hastada öncelikle ... düşünüyorum, çünkü ... İlk olarak ... yaparım; ... bulgusu alternatif tanıyı düşündürür."></textarea>'+
+    '<div class="oral-actions"><button class="primary" onclick="lockOral()">CEVABIMI KİLİTLE • ŞIKLARI AÇ →</button><button class="smallbtn" onclick="skipOral()">YALNIZ TEST MODUNA GEÇ</button></div>';
+  choices.before(panel);
+};
+window.lockOral=function(){
+  const input=document.getElementById('oralAnswer'),panel=document.getElementById('oralStage');
+  if(!input||!panel)return;
+  const answer=input.value.trim();
+  if(answer.length<25){toast('Sözlü yanıtında en az birkaç gerekçe yazmalısın (25 karakter).');input.focus();return;}
+  if(!session.oralRecords[session.caseId])session.oralRecords[session.caseId]=[];
+  session.oralRecords[session.caseId][session.step]={text:answer,checks:null,at:new Date().toISOString()};
+  persist();
+  panel.innerHTML='<div class="eyebrow">SÖZLÜ YANIT KİLİTLENDİ ✓</div><p class="oral-muted">Yanıtını değiştiremeyeceksin. Şimdi klinik karar seçenekleriyle karşılaştır; gerekçe anahtarı ancak kararından sonra açılır.</p><details><summary>Kendi ilk yanıtını göster</summary><p class="oral-written">'+esc(answer)+'</p></details>';
+  document.getElementById('choices').style.display='';
+  const b=document.getElementById('hintBtn');if(b)b.disabled=false;
+};
+window.skipOral=function(){
+  if(!confirm('Bu kararın sözlü prova kaydı oluşturulmayacak. Yalnız test moduyla devam edilsin mi?'))return;
+  session.oralMode=false;
+  persist();
+  const panel=document.getElementById('oralStage');if(panel)panel.remove();
+  const choices=document.getElementById('choices');if(choices)choices.style.display='';
+  const b=document.getElementById('hintBtn');if(b)b.disabled=false;
+  toast('Hızlı mod etkin. Bir sonraki vakada Sözlü modunu açabilirsin.');
+};
+hint=function(){
+  if(session.answer!==null||session.help)return;
+  if(session.oralMode&&document.getElementById('choices').style.display==='none'){toast('Önce bağımsız sözlü yanıtını kilitle.');return;}
+  session.help=true;
+  if(!session.hintUsed[session.caseId])session.hintUsed[session.caseId]=[];
+  session.hintUsed[session.caseId][session.step]=true;
+  const n=document.createElement('div');n.className='feedback';n.id='hint';
+  n.innerHTML='<div class="feedback-title">İPUCU / YANIT SIZDIRMAZ</div><p>Tek bulguya takılma. Hayatı tehdit eden fizyolojik sorunu, tanısal alternatifleri ve ilk on dakikada gecikmemesi gereken adımı düşün.</p>';
+  document.getElementById('choices').before(n);
+  document.getElementById('hintBtn').disabled=true;
+  sfx('good');
+};
+const _choose=choose;
+choose=function(i){
+  if(session.oralMode){
+    const p=document.getElementById('oralStage');
+    if(p&&document.getElementById('choices').style.display==='none'){toast('Önce sözlü cevabını kilitle.');return;}
+  }
+  if(session.answer!==null)return;
+  const c=DATA.find(x=>x.id===session.caseId),st=c.steps[session.step],index=session.choiceOrder[i],labels=SHORT_LABELS[c.id][session.step];
+  _choose(i);
+  const results=session.results[c.id],r=results[results.length-1];
+  if(r){r.choice=labels[index];r.correct=labels[0];persist();}
+  const lesson=CASE_TEACH[c.id];
+  const fb=document.getElementById('feedback');
+  const next=fb.querySelector('button[onclick*="nextStep"]');
+  if(next)next.remove();
+  const details=document.createElement('section');
+  details.className='deep-debrief';
+  const alternatives=st.options.map((o,k)=>{
+    const correct=k===0;
+    return '<div class="alternative '+(correct?'is-right':'')+'"><span class="alt-index">'+(correct?'DOĞRU':'AYIRT ET')+'</span><strong>'+esc(labels[k])+'</strong><p>'+esc(o[2])+'</p></div>';
+  }).join('');
+  const own=(session.oralRecords[c.id]||[])[session.step];
+  const rubric=(lesson.rubrics[session.step]||[]);
+  const rubricMarkup=own?'<section class="oral-eval"><div class="eyebrow">3 / 3 • SÖZLÜ ÖZ-DEĞERLENDİRME</div><h4>Cevabında gerçekten neleri söyledin?</h4><p class="oral-muted">Öğrendim diye otomatik işaretleme yapılmaz. Yalnız ilk kilitlediğin cevapta açıkça geçen maddeleri işaretle. Bu kişisel değerlendirmedir; otomatik yapay zekâ notu veya klinik yeterlilik puanı değildir.</p>'+
+    '<details><summary>Kilitli kendi yanıtımı karşılaştır</summary><p class="oral-written">'+esc(own.text)+'</p></details>'+
+    rubric.map((k,j)=>'<label class="rubric-check"><input type="checkbox" onchange="selfGrade()" data-rubric="'+j+'"><span>'+esc(k)+'</span></label>').join('')+
+    '<div id="oralScore" class="oral-score">Sözlü öz-değerlendirme: henüz yapılmadı</div></section>':
+    '<p class="oral-muted">Hızlı test modunda sözlü cevap toplanmadı. Çoktan seçmeli puan sözlü yeterlilik olarak kaydedilmez.</p>';
+  details.innerHTML='<div class="eyebrow">2 / 3 • ÖĞRETİM VE AYIRICI TANI</div>'+
+    '<h3>Neden bu karar? Diğerleri neden değil?</h3>'+
+    '<p><strong>Patofizyoloji:</strong> '+esc(lesson.mechanism)+'</p>'+
+    '<p><strong>Sık sözlü tuzağı:</strong> '+esc(lesson.pitfall)+'</p>'+
+    '<div class="alternatives">'+alternatives+'</div>'+
+    '<div class="exam-source">FBT kökeni: '+esc(c.fbt||'Temel klinik karar vakası; birebir FBT alıntısı değildir.')+'</div>'+
+    rubricMarkup;
+  fb.appendChild(details);
+  if(next){next.className='primary next-under-debrief';next.textContent= session.step===c.steps.length-1?'VAKAYI BİTİR →':'SONRAKİ SÖZLÜ SORU →';fb.appendChild(next);}
+};
+window.selfGrade=function(){
+  const a=(session.oralRecords[session.caseId]||[])[session.step];
+  if(!a)return;
+  const checks=[...document.querySelectorAll('[data-rubric]')].map(x=>x.checked);
+  a.checks=checks;
+  a.selfScore=checks.filter(Boolean).length;
+  persist();
+  const el=document.getElementById('oralScore');
+  if(el)el.textContent='Öz-değerlendirme: '+a.selfScore+'/'+checks.length+' kriter. Bu öğrenci beyanıdır; sınav notu değildir.';
+};
+const _caseComplete=caseComplete;
+caseComplete=function(c,score,r){
+  _caseComplete(c,score,r);
+  const lesson=CASE_TEACH[c.id];
+  const report=document.querySelector('.result-detail');
+  if(!report||!lesson)return;
+  const own=(session.oralRecords[c.id]||[]).filter(Boolean);
+  const scored=own.filter(x=>Array.isArray(x.checks));
+  const x=document.createElement('div');
+  x.className='case-followup';
+  x.innerHTML='<div class="eyebrow">SÖZLÜ KOMİSYONU / İKİNCİ TUR</div>'+
+   '<h3>Hocanın ters köşe sorusu</h3><p>'+esc(lesson.follow)+'</p>'+
+   '<p class="oral-muted">Cevabı zihninde veya sesli söyle; sonra örnek yanıtı aç.</p>'+
+   '<details><summary>Örnek sözlü yanıtını aç</summary><p>'+esc(lesson.answer)+'</p></details>'+
+   '<p class="oral-muted">Sözlü öz-değerlendirme: '+scored.length+'/'+c.steps.length+' adım değerlendirildi. Çoktan seçmeli puan ayrı tutulur.</p>';
+  report.after(x);
+};
+const _report=report;
+report=function(){
+  _report();
+  const p=document.querySelector('.score-panel');
+  if(!p)return;
+  const all=Object.values(session.oralRecords).flat().filter(Boolean);
+  const assessed=all.filter(x=>Array.isArray(x.checks));
+  const numerator=assessed.reduce((v,x)=>v+(x.selfScore||0),0);
+  const denominator=assessed.reduce((v,x)=>v+x.checks.length,0);
+  const div=document.createElement('section');div.className='oral-report';
+  div.innerHTML='<h3>Sözlü Komisyonu — ayrı izlem</h3>'+
+    '<p>Serbest yanıt: <strong>'+all.length+'</strong> • Öz-değerlendirmesi yapılmış: <strong>'+assessed.length+'</strong> • Bildirilen kriter: <strong>'+numerator+'/'+denominator+'</strong></p>'+
+    '<p class="oral-muted">Bu sayılar yalnız öz değerlendirmendir. Cevaplarını gerçek sözlü performansı gibi otomatik doğru kabul etmiyoruz. İşaretlenmemiş kriterler, sonraki farklı vakada yeniden anlatılmalıdır.</p>';
+  p.after(div);
+};
+const _reportText=reportText;
+reportText=function(){
+  const own=Object.entries(session.oralRecords).flatMap(([id,arr])=>(arr||[]).filter(Boolean).map((a,j)=>({id,step:j+1,a})));
+  return _reportText()+'\n\nSÖZLÜ ÇALIŞMA GÜNLÜĞÜ — ÖZ-DEĞERLENDİRME\n'+
+    (own.length?own.map(x=>'['+x.id+' / '+x.step+'] '+x.a.text+'\nRubrik: '+(Array.isArray(x.a.checks)?x.a.selfScore+'/'+x.a.checks.length:'değerlendirilmedi')).join('\n\n'):'Henüz sözlü prova yok.')+
+    '\n\nBu kayıtlar öz-beyandır; otomatik klinik doğruluk değerlendirmesi değildir.';
+};
+const _reset=reset;
+reset=function(){
+  const before=session.done.size;
+  _reset();
+  if(before>0&&session.done.size===0){session.oralRecords={};persist();}
+};
+document.title='NÖBET 03:17 v3.0 • Sözlü Komisyonu';
+const footer=document.querySelector('.bottom span:last-child');if(footer)footer.textContent='VERSİYON 3.0 • 25.10.2026';
+const css=document.createElement('style');
+css.textContent='.oral-toggle{padding:16px;margin:0 0 16px;background:#102b33;border:1px solid #315967;border-radius:15px}.oral-toggle p,.oral-muted{color:#a3bed2;line-height:1.65}.oral-stage,.deep-debrief,.oral-report,.case-followup{border:1px solid #305569;border-radius:16px;padding:19px;margin:18px 0;background:linear-gradient(145deg,#102a32,#101c2b)}.oral-stage h3,.deep-debrief h3{font-size:20px;line-height:1.4}.oral-stage label{display:block;font-weight:700;margin-bottom:9px}.oral-stage textarea{width:100%;font:inherit;color:#f0f7fa;background:#0b1825;border:1px solid #426779;border-radius:12px;padding:13px;resize:vertical;min-height:122px}.oral-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.oral-written{white-space:pre-wrap;word-break:break-word;padding:12px;background:#0b1623;border-radius:12px;color:#e0edfa;line-height:1.65}.deep-debrief p{line-height:1.68}.alternatives{display:grid;gap:10px;margin:18px 0}.alternative{border:1px solid #334454;padding:12px 13px;border-radius:12px;background:#0d1a2a}.alternative.is-right{border-color:#378876;background:#102e2b}.alternative strong{display:block;margin:5px 0;font-size:14px}.alternative p{font-size:13px;color:#b6c9db;margin:6px 0}.alt-index{font-size:10px;letter-spacing:.12em;color:#70ebc6;font-weight:800}.rubric-check{display:flex!important;align-items:flex-start;gap:10px;border:1px solid #355061;border-radius:10px;margin:10px 0!important;padding:12px;font-weight:500!important;line-height:1.5;cursor:pointer}.rubric-check input{margin-top:5px;accent-color:#51e6b7;transform:scale(1.2)}.oral-score,.exam-source{margin-top:13px;color:#83e4c2;font-size:13px}.next-under-debrief{display:block;margin-top:17px;width:100%}.case-followup{margin-top:20px}.case-followup summary,.oral-stage summary{cursor:pointer;color:#79e8d8}.oral-report{margin:20px 0}.oral-eval h4{font-size:18px}.exam-source{border-top:1px solid #2d4f54;padding-top:11px}@media(max-width:600px){.oral-stage,.deep-debrief,.oral-report,.case-followup{padding:14px}.oral-actions button{width:100%}.alternatives{gap:7px}}';
+document.head.appendChild(css);
+home();
+})();
+/* v3.0: Ek sözlü tur ve eksiklerden seçeneksiz tekrar */
+(function(){
+'use strict';
+let prev={};try{prev=JSON.parse(localStorage.getItem(SAVEKEY)||'{}')}catch(e){}
+session.followups=prev.followups||{};
+session.reviewHistory=Array.isArray(prev.reviewHistory)?prev.reviewHistory:[];
+const save=persist;
+persist=function(){save();try{let d=JSON.parse(localStorage.getItem(SAVEKEY)||'{}');d.followups=session.followups;d.reviewHistory=session.reviewHistory;localStorage.setItem(SAVEKEY,JSON.stringify(d))}catch(e){}};
+const oldCaseComplete=caseComplete;
+caseComplete=function(c,score,records){
+ oldCaseComplete(c,score,records);
+ const panel=document.querySelector('.case-followup');
+ if(!panel)return;
+ const t=CASE_TEACH[c.id];
+ panel.innerHTML='<div class="eyebrow">BOSS • HOCANIN DEVAM SORUSU</div><h3>'+esc(t.follow)+'</h3>'+
+ '<p class="oral-muted">Bu yeni, seçeneksiz soruyu cevaplamadan örnek yanıtı gösterilmeyecek.</p>'+
+ '<textarea id="followText" rows="4" placeholder="Ayırıcı tanıyı, patofizyolojiyi ve ilk adımı açıkla."></textarea>'+
+ '<div class="oral-actions"><button class="primary" onclick="saveFollow()">CEVABIMI KİLİTLE →</button></div><div id="followResult"></div>';
+};
+window.saveFollow=function(){
+ const el=document.getElementById('followText');if(!el||el.disabled)return;
+ const s=el.value.trim();if(s.length<25){toast('Önce en az 25 karakter gerekçe yaz.');return;}
+ const id=session.caseId,t=CASE_TEACH[id];
+ session.followups[id]={answer:s,at:new Date().toISOString()};persist();
+ const fb=document.getElementById('followResult');
+ fb.innerHTML='<p class="oral-written"><strong>Kilitli cevabın</strong>: '+esc(s)+'</p>'+
+ '<div class="model-answer"><strong>Örnek kıdemli yanıtı</strong><p>'+esc(t.answer)+'</p><strong>Yanılgı noktası</strong><p>'+esc(t.pitfall)+'</p></div>'+
+ '<p class="oral-muted">Yanıtını örnekle karşılaştır; otomatik doğru veya kalıcı öğrenme kaydı oluşturulmadı.</p>';
+ el.disabled=true;const b=document.querySelector('.case-followup button');if(b)b.disabled=true;
+};
+function due(){
+ let a=[];
+ for(const c of DATA){
+  (session.results[c.id]||[]).forEach((r,j)=>{
+   const o=(session.oralRecords[c.id]||[])[j];
+   const oralPoor=o&&Array.isArray(o.checks)&&o.selfScore<o.checks.length;
+   if(r.score<2||oralPoor||!o||!Array.isArray(o.checks))a.push({id:c.id,step:j,why:r.score<2?'Klinik karar eksiği':'Sözlü gerekçe veya kontrol eksikliği'});
+  });
+ }
+ if(!a.length)for(const c of DATA)if((session.results[c.id]||[]).length)a.push({id:c.id,step:0,why:'Gecikmeli aktif hatırlama'});
+ return a;
+}
+let q=[],qIndex=0;
+const oldReport=report;
+report=function(){
+ oldReport();
+ const p=document.querySelector('.oral-report');if(!p)return;
+ const n=due().length,div=document.createElement('section');div.className='oral-report';
+ div.innerHTML='<div class="eyebrow">AKTİF HATIRLAMA • SEÇENEKSİZ</div><h3>Eksiklerini yeniden anlat</h3>'+
+ '<p class="oral-muted">'+n+' sözlü tekrar kartı hazır. Yanlış/kısmi test kararları ve eksik sözlü kriterler öncelikli. Hepsi tam görünüyorsa bağımsız gecikmeli tekrar açılır.</p>'+
+ '<button class="primary" onclick="beginReview()">SÖZLÜ TEKRAR TURU →</button>';
+ p.after(div);
+};
+window.beginReview=function(){q=due();qIndex=0;if(!q.length){toast('Önce bir klinik dosya çöz.');return;}showReview()};
+function showReview(){
+ cancelAnimationFrame(raf);
+ const x=q[qIndex];if(!x){showCases();return;}
+ const c=DATA.find(y=>y.id===x.id),st=c.steps[x.step];session.caseId=null;
+ app.innerHTML='<section class="report-shell fade-in"><button class="back" onclick="showCases()">← DOSYALARA DÖN</button>'+
+ '<div class="report-hero"><div class="eyebrow">SÖZLÜ TEKRAR '+(qIndex+1)+' / '+q.length+'</div><h2>'+esc(c.patient)+'</h2>'+
+ '<p class="desc">'+esc(c.intro)+'</p></div><section class="oral-stage"><h3>'+esc(st.q)+'</h3>'+
+ '<p class="oral-muted">Şık yok. İki gerekçe ve bir acil karar yaz. Önce yanıt, sonra anahtar.</p>'+
+ '<textarea id="reviewText" rows="6" placeholder="Bu hastada ... çünkü ..."></textarea>'+
+ '<div class="oral-actions"><button class="primary" onclick="revealReview()">YANITI KİLİTLE →</button><button class="smallbtn" onclick="advanceReview(true)">ATLA</button></div>'+
+ '<div id="reviewReveal"></div></section></section>';window.scrollTo(0,0);
+}
+window.revealReview=function(){
+ const el=document.getElementById('reviewText');if(!el||el.disabled)return;
+ const value=el.value.trim();if(value.length<25){toast('En az 25 karakter açıklama yaz.');return;}
+ const x=q[qIndex],c=DATA.find(z=>z.id===x.id),st=c.steps[x.step];
+ session.reviewHistory.push({id:x.id,step:x.step,answer:value,at:new Date().toISOString(),status:'self-review'});persist();
+ document.getElementById('reviewReveal').innerHTML='<div class="model-answer"><h4>Örnek yanıt</h4><strong>'+esc(st.options[0][0])+'</strong>'+
+ '<p>'+esc(st.why)+'</p><p>'+esc(CASE_TEACH[c.id].mechanism)+'</p></div>'+
+ '<p class="oral-muted">Otomatik not verilmedi. Bir sonraki gün yeni vakada ipucusuz tekrar et.</p>'+
+ '<button class="primary" onclick="advanceReview(false)">SONRAKİ SÖZLÜ KART →</button>';
+ el.disabled=true;document.querySelectorAll('.oral-actions button').forEach(b=>b.disabled=true);
+};
+window.advanceReview=function(skip){
+ if(skip){const x=q[qIndex];session.reviewHistory.push({id:x.id,step:x.step,at:new Date().toISOString(),status:'skipped'});persist();}
+ qIndex++;showReview();
+};
+const oldReportText=reportText;
+reportText=function(){return oldReportText()+'\n\nSÖZLÜ TEKRAR GÜNLÜĞÜ\n'+session.reviewHistory.map((r,i)=>(i+1)+'. '+r.id+' / '+(r.step+1)+'\n'+(r.answer||'[atlandı]')).join('\n\n')};
+const oldReset=reset;
+reset=function(){oldReset();if(!Object.keys(session.results).length){session.followups={};session.reviewHistory=[];persist()}};
+const css=document.createElement('style');css.textContent='.case-followup textarea,.oral-stage #reviewText{display:block;width:100%;font:inherit;color:#eef8ff;background:#0b1825;border:1px solid #426779;border-radius:12px;padding:13px;resize:vertical;min-height:120px}.model-answer{padding:15px;border:1px solid #397565;background:#102c29;border-radius:12px;margin:15px 0;line-height:1.7}.model-answer p{margin:9px 0}';document.head.appendChild(css);
+})();
 </script>
 </body></html>
