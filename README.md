@@ -1,58 +1,48 @@
-# NÖBET 03:17 v2.0 — İleri Klinik Karar Simülatörü
+# NÖBET 03:17 v3.0 — Sözlü Komisyonu
 
-**[▶ Oyunu aç](https://huseyinozcanasta.github.io/nobet-0317/)** · **[FBT + kılavuz kaynak haritası](docs/FBT_KAYNAK_HARITASI.md)**
+**[▶ Oyunu aç](https://huseyinozcanasta.github.io/nobet-0317/)** · **[FBT kaynak haritası](docs/FBT_KAYNAK_HARITASI.md)**
 
-13 kurgusal hasta dosyasında **38 klinik karar**: 4 temel dahiliye hastası (12 karar), 8 ileri FBT-bağlantılı hasta (24 karar) ve açılabilen nöroşirürji bonusu (2 karar). V1'in görsel arayüzü ve cihaz içi kayıtları korunur.
+## Neden v3?
 
-## v2.0 — Yeni hasta tipleri
+v2'de doğru seçeneğin çoğu kez en uzun ve en ayrıntılı olması, öğrenciyi gerçek sözlüden farklı biçimde yönlendiriyordu. Yeni sürüm **önce bağımsız sözlü açıklama, sonra seçenek ve daha derin öğrenme** esasına göre tasarlandı.
 
-| Dosya | Klinik zorluk |
-|---|---|
-| 06 • Normal Şeker, Gizli Asidoz | SGLT2 ilişkili öglisemik DKA; glukoz tuzağı |
-| 07 • Ağrısız Sarılık, Kötüleşen Bilinç | Yaşlıda ağır kolanjit ve biliyer kaynak kontrolü |
-| 08 • Küçük Trombosit, Büyük Tehlike | TTP/DIC ayrımı; ADAMTS13 beklerken öncelik |
-| 09 • Akciğerden Böbreğe | ANCA/anti-GBM; hemoptizi ve RBC silendiri |
-| 10 • Kusma mı Kriz mi? | Uzun steroid kullanımı sonrası adrenal kriz |
-| 11 • Sessiz Karın, Ağır Enfeksiyon | Siroz, SBP ve asit PMN yorumlama |
-| 12 • Ateş Olmadan Ateş | Nötropenik hastada afebril enfeksiyon/şok |
-| 13 • Ateşle Gelen Aritmi | Tiroid fırtınası ve kardiyak dekompansasyon riski |
+### Sözlü çalışma döngüsü
+1. Hasta ve laboratuvar sunulur. Tanıyı baştan ele veren tanı etiketleri gizlenir.
+2. Öğrenci **en az 25 karakterlik serbest açıklamasını** yazar ve kilitler. Açıklama olmadan dört seçenek görünmez (Sözlü Komisyonu modu varsayılan açıktır).
+3. Seçenekler rastgele sıralanır. 38 sorunun en uzun seçeneği yalnızca 10 soruda tam doğrudur (26,3%; 25 Ekim 2026 metin uzunluğu denetimi). **Uzun seçeneği seçme stratejisi** artık güvenilir değildir.
+4. Seçimden sonra **tüm dört alternatifin neden doğru/yanlış olduğu**, patofizyoloji ve klasik sözlü sınav tuzağı gösterilir.
+5. Öğrenci ilk kilitli yanıtına bakarak 2 somut kriteri **kendisi** işaretler. Bu öz-değerlendirme çoktan seçmeli puandan ayrıdır; otomatik klinik yeterlilik iddiası taşımaz.
+6. Vaka sonunda hocanın açık uçlu devam sorusu yazıyla yanıtlanır; örnek yanıt ancak kilitlendikten sonra açılır.
+7. Nöbet raporundaki **seçeneksiz tekrar** turu yanlış/kısmi kararları ve eksik sözlü kriterleri önceliklendirir.
 
-## Nasıl oynanır?
+**Hızlı test modu** isteğe bağlıdır; Sözlü Komisyonu moduna triyaj ekranından geri dönülebilir.
 
-Siteye gir veya depodaki `index.html` dosyasını indirerek tarayıcıda aç. Oyun internet bağlantısı olmadan yerel dosya olarak çalışabilir. Seçimlerini yap, geri bildirimleri ve kaynak bağlantılarını incele. **Hata Atlası** ile kaçırdığın kararları gözden geçir. Kaydedilen tamamlanma bilgileri ve sonuçlar tarayıcı yerel alanında tutulur. Kullanıcı hesabı, backend veya API anahtarı gerekmez.
+## Hasta ve kaynak kapsamı
 
-## Kaynak ve güvenlik notu
+13 hasta dosyası ve 38 klinik karar korunuyor: dört temel dahiliye acili, sekiz ileri FBT bağlantılı vaka, bir gizli nöroşirürji konsültasyonu. Özgün FBT birleştirilmiş aktarımı: `Dahiliye_Birlesik_Sayfa_001-109.docx`. Özgün FBT soruları birebir kopyalanmadan vaka temelli yeniden yazılmıştır. [Kaynak haritasını incele](docs/FBT_KAYNAK_HARITASI.md).
 
-FBT soru numaraları Google Drive'daki **Dahiliye_Birlesik_Sayfa_001-109.docx** başlıklı birleşik aktarım ile konu/numara düzeyinde çapraz kontrol edildi. Yeni vaka ve seçenekler birebir sınav sorusu kopyası değildir; klinik uygulama sorularıdır. Ayrıntılar [kaynak haritasında](docs/FBT_KAYNAK_HARITASI.md). Kılavuz bilgileri rehberdir; **oyun tıbbi karar destek sistemi değildir**, gerçek hastada tanı/tanıma/tedavi aracı olarak kullanılmamalıdır. Uzman hekim denetimi ve yerel protokoller gereklidir.
+## Teknik ayrıntılar
+
+- **Kurulum yok:** `index.html` çevrimdışı tarayıcıda da çalışabilen tek dosyadır.
+- Daha önce kaydedilmiş vaka ilerlemesini aynı `nobet0317_v1` anahtarıyla yükler; v3 için ek sözlü cevap, öz-değerlendirme, devam sorusu ve tekrar kayıtlarını cihaz içinde tutar.
+- Cevapların içeriğini güvenilir biçimde otomatik notlandıracak bir yapay zekâ kullanılmaz. Öz-denetim, örnek yanıt ve kriter kontrolü kullanıcıya aittir.
+- Dikte/sesli okuma desteği tarayıcı özelliklerine bağlıdır. Gerçek mobil cihazda kullanıcı kabul testi ayrıca yapılmalıdır.
+
+## v3.0 test sonucu
+
+- Chromium'da tüm **13 hasta / 38 karar** üzerinden baştan sona geçiş.
+- Sözlü yanıt kilidi, seçeneklerin sonradan açılması, seçim sonrası gerekçeler, 38 öz-değerlendirme girdisi, puanlama ve yerel kaydın yeniden yüklenmesi doğrulandı.
+- Yanlış şık, hızlı mod, vaka sonu açık uçlu ek soru, eksik bazlı tekrar ve sonuç kaydının yeniden yüklenmesi ayrıca sınandı.
+- Testlerde JavaScript sayfa hatası görülmedi.
+
+**Tıbbi uyarı:** Eğitim simülasyonudur; gerçek hastada tanı, tedavi veya klinik karar destek aracı olarak kullanılmaz. Kılavuzlar, yerel protokol ve uzman hekim görüşü esastır.
 
 ---
 
-<details><summary>v1.0 ilk sürüm açıklaması</summary>
+## v2.0 sürüm notları
 
-# NÖBET 03:17 — Klinik Karar Simülasyonu
+ 8 ileri hasta, 24 yeni klinik karar; toplam 13 dosya ve 38 karar. Kaynak haritası `docs/FBT_KAYNAK_HARITASI.md`.
 
-Dahiliye acilleri ve gizli nöroşirürji konsültasyonunu konu alan, tamamen tarayıcıda çalışan Türkçe klinik karar oyunu.
+## v1.0
 
-**[Oyunu tarayıcıda aç](https://huseyinozcanasta.github.io/nobet-0317/)**
-
-## Özellikler
-- Dört dahiliye vakası: ağır hiperkalemi, hipokalemili DKA, postrenal akut böbrek hasarı ve septik şok.
-- Dört vakadan sonra açılan bonus nöroşirürji vakası (epidural hematom).
-- Hasta başı monitör görünümü, animasyonlu EKG, vital bulgular ve laboratuvar değerleri.
-- Klinik kararları puanlama, karar geribildirimi ve **Hata Atlası**.
-- Türkçe seslendirme, isteğe bağlı ses efektleri, cihaz üzerinde ilerleme kaydı ve rapor dışa aktarma.
-- Kurulum, npm ve sunucu gerektirmez; tek HTML dosyası.
-
-## Çalıştırma
-Tarayıcı bağlantısını ziyaret edin ya da `index.html` dosyasını indirip Chrome/Edge/Firefox'ta açın. İlk sayfa yüklendikten sonra çevrimdışı dosya olarak da çalışır.
-
-## İçerik yapısı
-`index.html` oyunun HTML, CSS, JavaScript ve senaryolarını içerir. Kullanıcı verileri tarayıcı içinde tutulur; herhangi bir kullanıcı hesabı veya arka uç sunucusu bulunmaz.
-
-## Tıbbi uyarı
-Bu proje tıp eğitimi için hazırlanmış bir **simülasyondur**; gerçek hastada tanı veya tedavi önerisi yerine geçmez. Vaka kararları kurumsal protokoller ve güncel kılavuzlarla ayrıca değerlendirilmelidir.
-
-## Geliştirme
-25 Ekim 2026 — ilk bağımsız sürüm. SON NÖBET adlı daha geniş eğitim uygulamasından ayrı bir depodur.
-
-</details>
+İlk dört dahiliye acili ve gizli epidural hematom konsültasyonu.
